@@ -1,0 +1,17 @@
+services:
+  svcqc.dep_squeaky-zucchini-goat:
+    entrypoint:
+    - /bin/sleep
+    - infinity
+    environment:
+    - OPENSTACK_USER
+    - OPENSTACK_PASS
+    - IM_USER
+    - IM_PASS
+    image: grycap/im-client:ec3
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+version: '3.7'
