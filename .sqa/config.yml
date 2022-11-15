@@ -1,26 +1,46 @@
 config:
-  credentials:
-  - id: upv_im_id
-    password_var: IM_PASS
-    username_var: IM_USER
-  - id: incd_openstack_id
-    password_var: OPENSTACK_PASS
-    username_var: OPENSTACK_USER
+  credentials: []
   project_repos:
     github.com/EOSC-synergy/mswss.jepl:
       branch: main
       repo: https://github.com/EOSC-synergy/mswss.jepl
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.5
+      branch: release/1.7.6
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  SvcQC.Dep:
+  QC.Acc:
     repos:
-      github.com/EOSC-synergy/mswss.jepl im_client:
+      github.com/EOSC-synergy/mswss.jepl git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-purple-yak.sh
-        container: svcqc.dep_squeaky-zucchini-goat
+        - /usr/bin/env sh .sqa/script.leaky-orange-shark.sh
+        container: qc.acc_flaky-ochre-collie
+  QC.Doc:
+    repos:
+      github.com/EOSC-synergy/mswss.jepl find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.goopy-cerise-worm.sh
+        container: qc.doc_jumpy-rose-cougar
+      github.com/EOSC-synergy/mswss.jepl git:
+        commands:
+        - /usr/bin/env sh .sqa/script.skanky-charcoal-bulldog.sh
+        container: qc.doc_flimsy-taupe-donkey
+      github.com/EOSC-synergy/mswss.jepl markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.greasy-grey-nightingale.sh
+        container: qc.doc_squeaky-ruby-retriever
+  QC.Lic:
+    repos:
+      github.com/EOSC-synergy/mswss.jepl licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-purple-owl.sh
+        container: qc.lic_scummy-blue-schnauzer
+  QC.Ver:
+    repos:
+      github.com/EOSC-synergy/mswss.jepl get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-crimson-coyote.sh
+        container: qc.ver_scaly-cinnamon-cuttlefish
 timeout: 5400
