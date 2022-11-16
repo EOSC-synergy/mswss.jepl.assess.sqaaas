@@ -7,20 +7,20 @@ config:
     password_var: OPENSTACK_PASS
     username_var: OPENSTACK_USER
   project_repos:
-    github.com/EOSC-synergy/mswss.jepl:
-      branch: main
-      repo: https://github.com/EOSC-synergy/mswss.jepl
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.6
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/mswss.jepl:
+      branch: main
+      repo: https://github.com/eosc-synergy/mswss.jepl
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   SvcQC.Dep:
     repos:
-      github.com/EOSC-synergy/mswss.jepl im_client:
+      github.com/eosc-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-platinum-gopher.sh
-        container: svcqc.dep_squirrely-wheat-ant
+        - /usr/bin/env sh .sqa/script.gimpy-black-cichlid.sh
+        container: svcqc.dep_trippy-eggplant-dugong
 timeout: 5400
