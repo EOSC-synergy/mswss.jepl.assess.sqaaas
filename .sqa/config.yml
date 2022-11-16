@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/mswss.jepl git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-orange-shark.sh
-        container: qc.acc_flaky-ochre-collie
+        - /usr/bin/env sh .sqa/script.muzzy-cerise-anteater.sh
+        container: qc.acc_surly-amethyst-wombat
   QC.Doc:
     repos:
       github.com/EOSC-synergy/mswss.jepl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-cerise-worm.sh
-        container: qc.doc_jumpy-rose-cougar
+        - /usr/bin/env sh .sqa/script.goopy-yellow-wolfhound.sh
+        container: qc.doc_goopy-amaranth-buzzard
       github.com/EOSC-synergy/mswss.jepl git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-charcoal-bulldog.sh
-        container: qc.doc_flimsy-taupe-donkey
+        - /usr/bin/env sh .sqa/script.skinny-amaranth-schnauzer.sh
+        container: qc.doc_gamy-sangria-sheep
       github.com/EOSC-synergy/mswss.jepl markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-grey-nightingale.sh
-        container: qc.doc_squeaky-ruby-retriever
+        - /usr/bin/env sh .sqa/script.breezy-cerulean-booby.sh
+        container: qc.doc_beady-xanthic-quoll
   QC.Lic:
     repos:
       github.com/EOSC-synergy/mswss.jepl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-purple-owl.sh
-        container: qc.lic_scummy-blue-schnauzer
+        - /usr/bin/env sh .sqa/script.fuzzy-black-falcon.sh
+        container: qc.lic_tacky-khaki-bombay
   QC.Ver:
     repos:
       github.com/EOSC-synergy/mswss.jepl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-crimson-coyote.sh
-        container: qc.ver_scaly-cinnamon-cuttlefish
+        - /usr/bin/env sh .sqa/script.crappy-salmon-terrier.sh
+        container: qc.ver_slimy-cerulean-dragon
 timeout: 5400
