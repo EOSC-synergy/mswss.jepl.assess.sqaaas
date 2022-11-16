@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_shaggy-aquamarine-beagle:
+  svcqc.dep_stinky-scarlet-tetra:
     entrypoint:
     - /bin/sleep
     - infinity

@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-burgundy-wolfhound.sh
-        container: svcqc.dep_shaggy-aquamarine-beagle
+        - /usr/bin/env sh .sqa/script.seedy-scarlet-starfish.sh
+        container: svcqc.dep_stinky-scarlet-tetra
 timeout: 5400
