@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_stinky-scarlet-tetra:
+  svcqc.dep_squirrely-wheat-ant:
     entrypoint:
     - /bin/sleep
     - infinity
