@@ -1,5 +1,11 @@
 config:
-  credentials: []
+  credentials:
+  - id: upv_im_id
+    password_var: IM_PASS
+    username_var: IM_USER
+  - id: incd_openstack_id
+    password_var: OPENSTACK_PASS
+    username_var: OPENSTACK_USER
   project_repos:
     github.com/EOSC-synergy/mswss.jepl:
       branch: main
@@ -11,36 +17,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
+  SvcQC.Dep:
     repos:
-      github.com/EOSC-synergy/mswss.jepl git:
+      github.com/EOSC-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-ruby-donkey.sh
-        container: qc.acc_stealthy-azure-newt
-  QC.Doc:
-    repos:
-      github.com/EOSC-synergy/mswss.jepl find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.ugly-cardinal-gibbon.sh
-        container: qc.doc_cloudy-lime-fowl
-      github.com/EOSC-synergy/mswss.jepl git:
-        commands:
-        - /usr/bin/env sh .sqa/script.woozy-apricot-jackal.sh
-        container: qc.doc_seedy-goldenrod-beaver
-      github.com/EOSC-synergy/mswss.jepl markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.crabby-jade-cuttlefish.sh
-        container: qc.doc_skimpy-ruby-cichlid
-  QC.Lic:
-    repos:
-      github.com/EOSC-synergy/mswss.jepl licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.woozy-corn-coral.sh
-        container: qc.lic_zippy-lime-dhole
-  QC.Ver:
-    repos:
-      github.com/EOSC-synergy/mswss.jepl get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.pretty-olive-cheetah.sh
-        container: qc.ver_skimpy-buff-mouse
+        - /usr/bin/env sh .sqa/script.messy-burgundy-wolfhound.sh
+        container: svcqc.dep_shaggy-aquamarine-beagle
 timeout: 5400

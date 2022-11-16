@@ -1,55 +1,14 @@
 services:
-  qc.acc_stealthy-azure-newt:
-    command: sleep 6000000
-    image: bitnami/git:2.34.1
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_cloudy-lime-fowl:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_seedy-goldenrod-beaver:
-    command: sleep 6000000
-    image: bitnami/git:2.34.1
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_skimpy-ruby-cichlid:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.lic_zippy-lime-dhole:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.ver_skimpy-buff-mouse:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
-      dockerfile: Dockerfile
-    command: sleep 6000000
+  svcqc.dep_shaggy-aquamarine-beagle:
+    entrypoint:
+    - /bin/sleep
+    - infinity
+    environment:
+    - OPENSTACK_USER
+    - OPENSTACK_PASS
+    - IM_USER
+    - IM_PASS
+    image: grycap/im-client:ec3
     volumes:
     - source: ./
       target: /sqaaas-build
