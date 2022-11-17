@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_trippy-eggplant-dugong:
+  svcqc.dep_breezy-ruby-iguana:
     entrypoint:
     - /bin/sleep
     - infinity

@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-black-cichlid.sh
-        container: svcqc.dep_trippy-eggplant-dugong
+        - /usr/bin/env sh .sqa/script.frumpy-cyan-dolphin.sh
+        container: svcqc.dep_breezy-ruby-iguana
 timeout: 5400
