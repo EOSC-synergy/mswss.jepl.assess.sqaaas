@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_breezy-ruby-iguana:
+  svcqc.dep_baggy-peach-baboon:
     entrypoint:
     - /bin/sleep
     - infinity
