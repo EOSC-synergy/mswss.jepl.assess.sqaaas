@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_baggy-peach-baboon:
+  svcqc.dep_freaky-green-stoat:
     entrypoint:
     - /bin/sleep
     - infinity

@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-auburn-mist.sh
-        container: svcqc.dep_baggy-peach-baboon
+        - /usr/bin/env sh .sqa/script.greasy-wisteria-dragonfly.sh
+        container: svcqc.dep_freaky-green-stoat
 timeout: 5400
