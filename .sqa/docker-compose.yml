@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_freaky-green-stoat:
+  svcqc.dep_ugly-corn-shrimp:
     entrypoint:
     - /bin/sleep
     - infinity
