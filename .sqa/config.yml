@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-brass-lobster.sh
-        container: svcqc.dep_ugly-corn-shrimp
+        - /usr/bin/env sh .sqa/script.scanty-dandelion-dragon.sh
+        container: svcqc.dep_surly-beige-albatross
 timeout: 5400
