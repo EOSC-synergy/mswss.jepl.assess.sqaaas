@@ -11,7 +11,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/mswss.jepl
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.6
+      branch: release/1.7.7
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-dandelion-dragon.sh
-        container: svcqc.dep_surly-beige-albatross
+        - /usr/bin/env sh .sqa/script.cozy-flax-eel.sh
+        container: svcqc.dep_breezy-champagne-turtle
 timeout: 5400

@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_surly-beige-albatross:
+  svcqc.dep_breezy-champagne-turtle:
     entrypoint:
     - /bin/sleep
     - infinity
