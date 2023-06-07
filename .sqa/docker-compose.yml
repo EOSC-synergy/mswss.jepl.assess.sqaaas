@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_wheezy-cornflower-zorse:
+  svcqc.dep_goopy-amber-catfish:
     entrypoint:
     - /bin/sleep
     - infinity
