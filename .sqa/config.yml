@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/mswss.jepl im_client:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-platinum-tortoise.sh
-        container: svcqc.dep_crabby-aqua-barracuda
+        - /usr/bin/env sh .sqa/script.sickly-cinnamon-tarantula.sh
+        container: svcqc.dep_wheezy-cornflower-zorse
 timeout: 5400

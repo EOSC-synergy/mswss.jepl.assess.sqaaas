@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_crabby-aqua-barracuda:
+  svcqc.dep_wheezy-cornflower-zorse:
     entrypoint:
     - /bin/sleep
     - infinity
