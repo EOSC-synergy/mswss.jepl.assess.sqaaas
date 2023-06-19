@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-puce-barracuda.sh
-        container: svcqc.dep_messy-cornflower-clam
+        - /usr/bin/env sh .sqa/script.nippy-salmon-llama.sh
+        container: svcqc.dep_snappy-violet-camel
 timeout: 5400
