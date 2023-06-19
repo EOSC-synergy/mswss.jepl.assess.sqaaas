@@ -16,11 +16,9 @@ echo "Generated auth.dat file:"
 ls -l /im/auth.dat
 echo
 
-
-cp IM/mswss-infrastructure-static.radl github.com/EOSC-synergy/mswss.jepl/IM/mswss-infrastructure-static.radl
-echo "Printing IM config file: github.com/EOSC-synergy/mswss.jepl/IM/mswss-infrastructure-static.radl"
-cat github.com/EOSC-synergy/mswss.jepl/IM/mswss-infrastructure-static.radl
-im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs github.com/EOSC-synergy/mswss.jepl/IM/mswss-infrastructure-static.radl > ./im_radl.json
+echo "Printing IM config file: ./IM/mswss-infrastructure-static.radl"
+cat ./IM/mswss-infrastructure-static.radl
+im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs ./IM/mswss-infrastructure-static.radl > ./im_radl.json
 RETURN_CODE=$?
 echo "im_client.py create_wait_outputs return code: ${RETURN_CODE}"
 echo "Infrastructure Manager output:"

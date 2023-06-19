@@ -1,5 +1,6 @@
 services:
-  svcqc.dep_goopy-amber-catfish:
+  svcqc.dep_grumpy-tangerine-grouse:
+    command: sleep 6000000
     entrypoint:
     - /bin/sleep
     - infinity

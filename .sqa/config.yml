@@ -19,8 +19,8 @@ environment:
 sqa_criteria:
   SvcQC.Dep:
     repos:
-      github.com/EOSC-synergy/mswss.jepl im_client:
+      this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-scarlet-turkey.sh
-        container: svcqc.dep_goopy-amber-catfish
+        - /usr/bin/env sh .sqa/script.gimpy-purple-horse.sh
+        container: svcqc.dep_grumpy-tangerine-grouse
 timeout: 5400
