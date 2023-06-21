@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-salmon-llama.sh
-        container: svcqc.dep_snappy-violet-camel
+        - /usr/bin/env sh .sqa/script.gummy-seashell-macaque.sh
+        container: svcqc.dep_hasty-khaki-octopus
 timeout: 5400

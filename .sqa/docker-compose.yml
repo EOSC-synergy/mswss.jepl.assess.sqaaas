@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_snappy-violet-camel:
+  svcqc.dep_hasty-khaki-octopus:
     command: sleep 6000000
     entrypoint:
     - /bin/sleep
