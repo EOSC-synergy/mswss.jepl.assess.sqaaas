@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_hasty-khaki-octopus:
+  svcqc.dep_flaky-azure-angora:
     command: sleep 6000000
     entrypoint:
     - /bin/sleep

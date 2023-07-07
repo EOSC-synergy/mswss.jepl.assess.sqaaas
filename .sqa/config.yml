@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-seashell-macaque.sh
-        container: svcqc.dep_hasty-khaki-octopus
+        - /usr/bin/env sh .sqa/script.skanky-silver-nightingale.sh
+        container: svcqc.dep_flaky-azure-angora
 timeout: 5400
