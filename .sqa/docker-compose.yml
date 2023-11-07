@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_bluesy-lime-mayfly:
+  svcqc.dep_pasty-buff-boar:
     command: sleep 6000000
     entrypoint:
     - /bin/sleep
