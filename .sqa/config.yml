@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-pear-chinook.sh
-        container: svcqc.dep_scanty-cerise-cuscus
+        - /usr/bin/env sh .sqa/script.zippy-brass-coyote.sh
+        container: svcqc.dep_slaphappy-myrtle-discus
 timeout: 5400
