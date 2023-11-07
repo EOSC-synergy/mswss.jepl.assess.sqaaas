@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-brass-coyote.sh
-        container: svcqc.dep_slaphappy-myrtle-discus
+        - /usr/bin/env sh .sqa/script.sleepy-alizarin-coral.sh
+        container: svcqc.dep_bluesy-lime-mayfly
 timeout: 5400
