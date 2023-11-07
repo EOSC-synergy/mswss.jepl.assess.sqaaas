@@ -11,7 +11,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/mswss.jepl
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-silver-nightingale.sh
-        container: svcqc.dep_flaky-azure-angora
+        - /usr/bin/env sh .sqa/script.muzzy-pear-chinook.sh
+        container: svcqc.dep_scanty-cerise-cuscus
 timeout: 5400

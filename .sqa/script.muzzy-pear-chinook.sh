@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
 (mkdir /im
 cat <<EOF >> /im/auth.dat
 # InfrastructureManager auth
@@ -16,9 +20,9 @@ echo "Generated auth.dat file:"
 ls -l /im/auth.dat
 echo
 
-echo "Printing IM config file: ./mswss-infrastructure-static.radl"
-cat ./mswss-infrastructure-static.radl
-im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs ./mswss-infrastructure-static.radl > ./im_radl.json
+echo "Printing IM config file: ./IM/mswss-infrastructure-static.radl"
+cat ./IM/mswss-infrastructure-static.radl
+im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs ./IM/mswss-infrastructure-static.radl > ./im_radl.json
 RETURN_CODE=$?
 echo "im_client.py create_wait_outputs return code: ${RETURN_CODE}"
 echo "Infrastructure Manager output:"
