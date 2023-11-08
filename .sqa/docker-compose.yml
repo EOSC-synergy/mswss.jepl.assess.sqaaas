@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_pasty-buff-boar:
+  svcqc.dep_queasy-ecru-albatross:
     command: sleep 6000000
     entrypoint:
     - /bin/sleep
