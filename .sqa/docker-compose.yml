@@ -1,5 +1,5 @@
 services:
-  svcqc.dep_lumpy-cornflower-angora:
+  svcqc.dep_gloppy-cobalt-coyote:
     command: sleep 6000000
     entrypoint:
     - /bin/sleep
