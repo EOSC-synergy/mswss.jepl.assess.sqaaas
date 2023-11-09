@@ -21,6 +21,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-russet-pig.sh
-        container: svcqc.dep_queasy-ecru-albatross
+        - /usr/bin/env sh .sqa/script.muzzy-amethyst-neanderthal.sh
+        container: svcqc.dep_lumpy-cornflower-angora
 timeout: 5400
